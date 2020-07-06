@@ -31,9 +31,11 @@ import InputHandler from "./modulos/InputHandler"
 import Select from "./modulos/Select"
 import Contenedores from "./modulos/Contenedores"
 import Nav from "./modulos/Nav"
-import CodigoHtml from "./modulos/CodigoHtml"
-import CodigoJs from "./modulos/CodigoJs"
-import CodigoCss from "./modulos/CodigoCss"
+import Html from "./modulos/CodigoHtml"
+import Js from "./modulos/CodigoJs"
+import Css from "./modulos/CodigoCss"
+import Java from "./modulos/CodigoJava"
+import C from "./modulos/CodigoC"
 import ComentarioDinamico from "./modulos/ComentarioDinamico"
 
 (function(){
@@ -44,18 +46,33 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
     GruposInput.iniciar()
     Desactivado.iniciar();
     InputHandler.iniciar()
-    CodigoJs.iniciar()
-    CodigoCss.iniciar()
     ComentarioDinamico.iniciar()
     
     const CodigoHtmlInit = (config) => {
-        CodigoHtml.iniciar(config)
+        Html.iniciar(config)
     }
 
+    const CodigoJsInit = (config) => {
+        Js.iniciar(config)
+    }
+
+    const CodigoCssInit = (config) => {
+        Css.iniciar(config)
+    }
+
+    const CodigoJavaInit = (config) => {
+        Java.iniciar(config)
+    }
+
+    const CodigoCInit = (config) => {
+        C.iniciar(config)
+    }
 
     const TemplateDestroy = () => {
         Template.destroy()
     }
+
+    
 
     const NavInit = () => {
         Nav.iniciar()
@@ -252,7 +269,11 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
 
         // Codigo 
 
-        CodigoHtmlInit: (config) =>  CodigoHtmlInit(config)
+        CodigoHtmlInit: (config) =>  CodigoHtmlInit(config),
+        CodigoCssInit: (config) =>  CodigoCssInit(config),
+        CodigoJsInit: (config) =>  CodigoJsInit(config),
+        CodigoJavaInit: (config) =>  CodigoJavaInit(config),
+        CodigoCInit: (config) =>  CodigoCInit(config)
     }
     
     window.BS = BS

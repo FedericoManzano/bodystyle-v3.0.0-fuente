@@ -191,7 +191,10 @@ import ERR from "./GestionErrores"
         $(window).off("focus", focoVentana)
         $(window).off("blur", blurVentana)
         pararCronometro()
+        seleccionado = 1
         intervalo = null
+        config = null
+        cantidad = 0
     } 
 
     var Slider = {

@@ -15,6 +15,9 @@ import $ from "jquery"
         $(".boton-desplegable").off()
         $(".nav-complemento").off()
         $(window).off("resize", manejadorVentana)
+        sidebarDesplegada = false
+        colapsoDesplegable = false
+        seidebarCompuestaDesplegada = true
     }
 
     const cargarComplemento = () => {
