@@ -114,12 +114,17 @@ yarn add body-ui
 - [babeljs](https://babeljs.io/)
 - [webpack](https://webpack.js.org/) v4.43.0
 
-## Cambios desde la versión 2.1.1
+## Cambios desde la versión 2.2.0
 
 - Capacidad deresaltar el código fuente de `html`, `js`, `css`, `java`, `c`.
 - Objetos dinámicos con una descripción personalida.
 - Mejoramiento de las barras de navegación.
 - Dropdown refactorizado y depurado respecto versiones anteriores.
+
+ > Se eliminaron las funcionalidades de resaltar el código fuente y se los reemplazó con una dependecia show-code-v1.1.1. 
+
+[show-code](https://github.com/FedericoManzano/show-code-v1.1.0-fuente)
+
 
 ## Licencia
 
