@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: './src/app.js',
+  
   output: {
     filename: 'bodystyle.js',
     path: path.join(__dirname, 'dist/js'),

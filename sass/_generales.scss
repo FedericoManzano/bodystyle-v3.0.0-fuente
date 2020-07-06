@@ -51,10 +51,6 @@ h6, .h6 {
     font-weight: get-grosor($grosor, "500");
 }
 
-ul, ol {
-    list-style: none ;
-}
-
 a{
     font-size: map-get($letras, "a");
     text-decoration: none ;
