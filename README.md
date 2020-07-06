@@ -1,6 +1,6 @@
 # Bodystyle UI 
 
-## Librería de estilos en CSS (v2.2.0)
+## Librería de estilos en CSS (v3.0.0)
 
 Librería pensada para la creación y el desarrollo del frontend de sitios o aplicaciones web.
 
@@ -17,11 +17,21 @@ La forma de utilizar estos enlaces es agregandolos dentro de la etiqueta `<head>
 
 ### CDN
 
-### bodystyle.min.css
-[https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v2.2.0-fuente/master/dist/css/bodystyle.min.css](https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v2.2.0-fuente/master/dist/css/bodystyle.min.css)
+#### bodystyle.min.css
+[https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/bodystyle.min.css](https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/bodystyle.min.css)
 
-### bodystyle.min.js
-[https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v2.2.0-fuente/master/dist/js/bodystyle.min.js](https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v2.2.0-fuente/master/dist/js/bodystyle.min.js)
+#### bodystyle.min.js
+[https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/js/bodystyle.min.js](https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/js/bodystyle.min.js)
+
+#### Solo la grilla 
+
+Podemos añadir solo la grilla de bodystyle dejando de lado todo lo demas si no lo necesitamos.
+
+[https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/grillaSolo.min.css](https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/grillaSolo.min.css)
+
+#### Solo los utilitarios 
+
+[https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/utilitarios.min.css](https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/utilitarios.min.css)
 
 #### Cabecera
 ```html
@@ -32,7 +42,7 @@ La forma de utilizar estos enlaces es agregandolos dentro de la etiqueta `<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link con el CDN de los estilos css  -->
-    <link rel="stylesheet" href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v2.2.0-fuente/master/dist/css/bodystyle.min.css">
+    <link rel="stylesheet" href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/bodystyle.min.css">
 
 </head>
 
@@ -41,7 +51,7 @@ La forma de utilizar estos enlaces es agregandolos dentro de la etiqueta `<head>
 
 #### Pie
 ```html
-<script src="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v2.2.0-fuente/master/dist/js/bodystyle.min.js"></script>
+<script src="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/js/bodystyle.min.js"></script>
 </body>
 ```
 
@@ -57,11 +67,11 @@ Dejamos una plantilla para copiar y pegar para poder cargar la librería con lo 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Link con el CDN de los estilos css  -->
-        <link rel="stylesheet" href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v2.2.0-fuente/master/dist/css/bodystyle.min.css">
+        <link rel="stylesheet" href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/bodystyle.min.css">
     </head>
     <body>
         <h1>Hola Mundo !!! <span class="badge badge-rojo">New</h1>
-        <script src="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v2.2.0-fuente/master/dist/js/bodystyle.min.js"></script>
+        <script src="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/js/bodystyle.min.js"></script>
     </body>
 </html>
 ```
@@ -74,12 +84,12 @@ de Node.
 
 ### Archivo Precompilado
 
-[bodystyle-v2.2.0-precompilado-master.zip](https://github.com/FedericoManzano/bodystyle-v2.2.0-precompilado/archive/master.zip)
+[bodystyle-v3.0.0-precompilado-master.zip](https://github.com/FedericoManzano/bodystyle-v3.0.0-precompilado/archive/master.zip)
 
 
 ### Archivo Fuente
 
-[bodystyle-v2.2.0-fuente-master.zip](https://github.com/FedericoManzano/bodystyle-v2.2.0-fuente/archive/master.zip)
+[bodystyle-v3.0.0-fuente-master.zip](https://github.com/FedericoManzano/bodystyle-v3.0.0-fuente/archive/master.zip)
 
 ### Node package
 Ingresar por el terminal los siguientes comandos para instalar la dependencia de la librería.
@@ -98,6 +108,7 @@ yarn add body-ui
 
 ### Producción 
 - [jquery](https://jquery.com/)
+- [show-code](https://github.com/FedericoManzano/show-code-v1.1.0-fuente)
 
 ### Desarrollo 
 - [babeljs](https://babeljs.io/)
@@ -105,7 +116,7 @@ yarn add body-ui
 
 ## Cambios desde la versión 2.1.1
 
-- Capacidad deresaltar el código fuente de `html`, `js`, `css`.
+- Capacidad deresaltar el código fuente de `html`, `js`, `css`, `java`, `c`.
 - Objetos dinámicos con una descripción personalida.
 - Mejoramiento de las barras de navegación.
 - Dropdown refactorizado y depurado respecto versiones anteriores.
